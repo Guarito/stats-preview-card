@@ -19,8 +19,8 @@
         />
 
         <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
             rel="stylesheet"
-            href="https://fonts.google.com/specimen/Lexend+Deca"
         />
         <link rel="stylesheet" href="styles.css" />
 
@@ -31,13 +31,13 @@
             <div class="card__image">
                 <picture class="card__image--container">
                     <source
-                        media="(max-width:375px)"
-                        srcset="assets/image-header-mobile.jpg"
+                        media="(min-width: 768px)"
+                        srcset="assets/image-header-desktop.jpg"
                     />
                     <img
-                        src="assets/image-header-desktop.jpg"
+                        src="assets/image-header-mobile.jpg"
                         alt="Image Header"
-                        style="width: 100%"
+                        style="max-width: 100%"
                     />
                 </picture>
                 <div class="card__image--overlay"></div>

@@ -30,25 +30,26 @@ body {
 .containerCard {
     background-color: var(--DarkDesaturatedBlue);
     width: 92%;
-    margin: 0 auto;
+    height: 80vh;
+    margin: 10vh auto 1rem auto;
     border-radius: 0.4rem;
 }
 .card__image {
     position: relative;
 }
-.card__image--container img {
-    position: relative;
+
+.card__image img {
     border-radius: 0.4rem 0.4rem 0 0;
-    /* filter: blur(1px); */
 }
 
 .card__image--overlay {
     position: absolute;
     top: 0;
-    height: 100%;
+    height: calc(100% - 0.25rem);
     width: 100%;
     background-color: var(--SoftViolet);
     filter: opacity(0.5) brightness(0.4) saturate(3.5);
+    border-radius: 0.4rem 0.4rem 0 0;
 }
 
 .card__text {
