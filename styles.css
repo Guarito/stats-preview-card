@@ -10,6 +10,8 @@
     --White: hsl(0, 0%, 100%);
     --TransparentWhite: hsla(0, 0%, 100%, 0.75);
     --TransparentWhite2: hsla(0, 0%, 100%, 0.6);
+
+    --roundedCorner: 1rem;
 }
 
 html {
@@ -44,17 +46,17 @@ p {
 
 .containerCard {
     background-color: var(--DarkDesaturatedBlue);
-    width: 92%;
+    width: 90%;
     height: auto;
     margin: 10% auto;
-    border-radius: 0.4rem;
+    border-radius: var(--roundedCorner);
 }
 .card__image {
     position: relative;
 }
 
 .card__image img {
-    border-radius: 0.4rem 0.4rem 0 0;
+    border-radius: var(--roundedCorner) var(--roundedCorner) 0 0;
 }
 
 .card__image--overlay {
@@ -64,7 +66,7 @@ p {
     width: 100%;
     background-color: var(--SoftViolet);
     filter: opacity(0.5) brightness(0.4) saturate(3.5);
-    border-radius: 0.4rem 0.4rem 0 0;
+    border-radius: var(--roundedCorner) var(--roundedCorner) 0 0;
 }
 
 .card__text {
@@ -84,7 +86,7 @@ p {
     /* text-align: center; */
     font-size: 1.5rem;
     line-height: 2rem;
-    margin: 0;
+    margin-bottom: 1rem;
 }
 .card__footer {
     display: grid;
