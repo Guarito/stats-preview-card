@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.google.com/specimen/Lexend+Deca"
+        />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Frontend Mentor | Stats preview card component</title>
+    </head>
+    <body>
+        <div class="containerCard">
+            <div class="card__image">
+                <picture class="card__image--container">
+                    <source
+                        media="(max-width:375px)"
+                        srcset="assets/image-header-mobile.jpg"
+                    />
+                    <img
+                        src="assets/image-header-desktop.jpg"
+                        alt="Image Header"
+                        style="width: 100%"
+                    />
+                </picture>
+                <div class="card__image--overlay"></div>
+            </div>
+            <div class="card__text">
+                <strong class="card__title">
+                    Get <span class="card__title--span">insights</span> that
+                    help your business grow.
+                </strong>
+                <p class="card__paragraph">
+                    Discover the benefits of data analytics and make better
+                    decisions regarding revenue, customer experience, and
+                    overall efficiency.
+                </p>
+                10k+ companies 314 templates 12m+ queries
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Capassoft</a>.
+        </div>
+    </body>
+</html>

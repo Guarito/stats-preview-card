@@ -1,0 +1,64 @@
+/*Global*/
+* {
+    /*-----------Colors----------*/
+    /*----------Primary----------*/
+    --VeryDarkBlue: hsl(233, 47%, 7%);
+    --DarkDesaturatedBlue: hsl(244, 38%, 16%);
+    --SoftViolet: hsl(277, 64%, 61%);
+
+    /*----------Neutrals----------*/
+    --White: hsl(0, 0%, 100%);
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --TransparentWhite2: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    font-family: "Inter";
+    font-size: 15px;
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.containerCard {
+    background-color: var(--DarkDesaturatedBlue);
+    width: 92%;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+}
+.card__image {
+    position: relative;
+}
+.card__image--container img {
+    position: relative;
+    border-radius: 0.4rem 0.4rem 0 0;
+    /* filter: blur(1px); */
+}
+
+.card__image--overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--SoftViolet);
+    filter: opacity(0.5) brightness(0.4) saturate(3.5);
+}
+
+.card__text {
+    padding: 2rem;
+}
+
+.card__title--span {
+    color: var(--SoftViolet);
+}
+.card__paragraph {
+    text-align: center;
+    line-height: 1.6rem;
+}
