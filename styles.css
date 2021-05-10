@@ -79,6 +79,8 @@ p {
 }
 
 .card__text {
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     text-align: center;
 }
@@ -92,13 +94,14 @@ p {
 }
 .card__paragraph {
     color: var(--TransparentWhite);
-    /* text-align: center; */
     font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 1rem;
+    flex-grow: 1;
 }
 .card__footer {
     display: grid;
+    flex-grow: 1;
 }
 .card__footer--item {
     display: flex;
@@ -117,12 +120,16 @@ p {
 }
 
 @media (min-width: 568px) {
+    .containerCard {
+        margin: 10% auto 2% auto;
+    }
     .card__text {
         padding: 4rem 6rem;
         text-align: left;
     }
     .card__footer {
         grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
     .card__paragraph {
         text-align: left;
@@ -143,6 +150,7 @@ p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
+
     .card__img {
         grid-column: 2/3;
     }
@@ -153,5 +161,22 @@ p {
     .card__text {
         grid-column: 1/2;
         grid-row: 1/2;
+    }
+    .card__paragraph {
+        margin-top: 1rem;
+    }
+}
+@media (min-width: 992px) {
+    .card__text {
+        padding: 4rem 10rem 4rem 6rem;
+    }
+    .card__paragraph {
+        font-size: 1.8rem;
+    }
+    .card__footer--item .item__title {
+        font-size: 2.8rem;
+    }
+    .card__footer--item .item__description {
+        font-size: 1.4rem;
     }
 }
